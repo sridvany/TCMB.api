@@ -1,9 +1,9 @@
-from evds import evdsAPI #https://evds2.tcmb.gov.tr/index.php?/evds/serieMarket
+from evds import evdsAPI 
 
 evds = evdsAPI('SnWnU6PUDF') #anahtar olmadan veri çekilemez
 
 df = evds.get_data(
-    ['TP.GY1.N2'],
+    ['TP.GY1.N2'], # semboller buradan alınır https://evds2.tcmb.gov.tr/index.php?/evds/serieMarket
     startdate="01-01-2019",
     enddate="01-01-2020"
 )
