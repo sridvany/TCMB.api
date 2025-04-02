@@ -1,6 +1,6 @@
 from evds import evdsAPI 
 
-evds = evdsAPI('SnWnU6PUDF')  #anahtar olmadan veri çekilemez
+evds = evdsAPI('.........')  #anahtar olmadan veri çekilemez
 
 df = evds.get_data(
     ['TP.GY1.N2'],            #semboller buradan alınır https://evds2.tcmb.gov.tr/index.php?/evds/serieMarket
