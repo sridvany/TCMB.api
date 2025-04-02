@@ -1,6 +1,6 @@
-from evds import evdsAPI
+from evds import evdsAPI #https://evds2.tcmb.gov.tr/index.php?/evds/serieMarket
 
-evds = evdsAPI('SnWnU6PUDF') #https://evds2.tcmb.gov.tr/index.php?/evds/serieMarket
+evds = evdsAPI('SnWnU6PUDF') #anahtar olmadan veri çekilemez
 
 df = evds.get_data(
     ['TP.GY1.N2'],
