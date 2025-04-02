@@ -1,0 +1,11 @@
+from evds import evdsAPI
+
+evds = evdsAPI('SnWnU6PUDF') #https://evds2.tcmb.gov.tr/index.php?/evds/serieMarket
+
+df = evds.get_data(
+    ['TP.GY1.N2'],
+    startdate="01-01-2019",
+    enddate="01-01-2020"
+)
+
+print(df.head())
